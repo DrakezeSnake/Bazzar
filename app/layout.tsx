@@ -1,0 +1,20 @@
+import type { Metadata } from 'next';
+import './globals.css';
+
+export const metadata: Metadata = {
+  title: 'Bazzar – Egyptian Handmade Marketplace',
+  description: 'Discover authentic Egyptian crafts from artisans across the country.',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" dir="ltr">
+      <body>{children}</body>
+    </html>
+  );
+}
